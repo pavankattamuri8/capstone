@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Admin Dashboard</h2>
+<p><a href="{{ url_for('admin_logout') }}">Logout</a></p>
+<div class="cards">
+  {% for j in jobs %}
+  <div class="card">
+    <h3>{{ j[1] }}</h3>
+    <p><strong>Type:</strong> {{ j[2] }}</p>
+    <p>{{ j[3] }}</p>
+    <a class="btn" href="{{ url_for('admin_job', job_id=j[0]) }}">View Applicants</a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Available Jobs</h2>
+<div class="cards">
+  {% for j in jobs %}
+  <div class="card">
+    <h3>{{ j[1] }}</h3>
+    <p><strong>Type:</strong> {{ j[2] }}</p>
+    <p>{{ j[3] }}</p>
+    <a class="btn" href="{{ url_for('apply', job_id=j[0]) }}">Apply</a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

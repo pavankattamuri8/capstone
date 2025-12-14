@@ -1,0 +1,14 @@
+body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;background:#f5f7fb;color:#222}
+header{background:#1f2937;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
+header h1{margin:0;font-size:20px}
+nav a{color:#cbd5e1;margin-left:12px;text-decoration:none}
+main{padding:20px}
+.cards{display:flex;gap:16px;flex-wrap:wrap}
+.card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);width:300px}
+.btn{display:inline-block;margin-top:8px;padding:8px 12px;background:#2563eb;color:#fff;text-decoration:none;border-radius:6px}
+.form{display:flex;flex-direction:column;gap:8px;max-width:480px}
+.form input[type=text],.form input[type=email],.form input[type=password],.form input[type=file]{padding:8px;border:1px solid #d1d5db;border-radius:4px}
+.form button{padding:10px 14px;background:#10b981;color:#fff;border:none;border-radius:6px}
+.app-table{width:100%;border-collapse:collapse}
+.app-table th,.app-table td{border:1px solid #e5e7eb;padding:8px;text-align:left}
+footer{padding:12px 20px;background:#fff;border-top:1px solid #e6eef8;margin-top:20px}
